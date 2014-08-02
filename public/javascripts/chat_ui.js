@@ -16,7 +16,7 @@ function processUserInput(chatApp, socket) {
       $('#messages').append(divSystemContentElement(systemMessage));
     }
   } else {
-
+    
     cahtApp.sendMessage($('#room').text(), message);
     $('#messages').append(divEscapedcontentElement(message));
     $('#messages').scrollTop($('#messages').prop('scrollHeight'));
